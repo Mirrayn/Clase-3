@@ -1,0 +1,103 @@
+:root {
+  --red: #cc0000;
+  --dark: #333;
+  --mid: #666;
+  --light: #999;
+  --border: #ddd;
+  --serif: 'Newsreader', Georgia, serif;
+  --sans: 'Roboto Condensed', Arial, sans-serif;
+}
+
+body { font-family: var(--serif); -webkit-font-smoothing: antialiased; }
+
+.wordmark {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--red);
+  text-decoration: none;
+}
+.nav-divider { width: 1px; height: 18px; background: var(--border); }
+.nav-section {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 48px 20px 32px;
+}
+.kicker {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--dark);
+}
+
+/* ARTICLE */
+article { padding: 28px 0 40px; border-top: 1px solid var(--border); }
+
+h2 {
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+.byline {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--mid);
+  margin-bottom: 20px;
+}
+.byline strong { color: var(--dark); }
+
+p {
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+/* FIGURE */
+figure { margin: 28px -100px 24px; }
+figure img { width: 100%; display: block; border: 1px solid var(--border); }
+figcaption {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--light);
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 20px;
+  text-align: center;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--red);
+}
